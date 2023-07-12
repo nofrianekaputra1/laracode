@@ -6,13 +6,12 @@ use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminLayananController;
 use App\Http\Controllers\Admin\AdminLogController;
 use App\Http\Controllers\Admin\AdminProdukController;
+use App\Http\Controllers\User\UserHomeController;
 use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', [UserHomeController::class, 'index'])->name('home');
 
 Route::controller(AdminLogController::class)->group(function () {
     Route::get('/cariuang', 'index');
