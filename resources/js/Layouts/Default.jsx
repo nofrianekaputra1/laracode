@@ -19,16 +19,16 @@ function Layout({ children }) {
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
                                 <li className="nav-item">
-                                    <a className="nav-link " aria-current="page" href="#"><i className="bi bi-house"></i> Home</a>
+                                    <Link className="nav-link " aria-current="page" href={route('home')}><i className="bi bi-house"></i> Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " aria-current="page" href="#"><i className="bi bi-app-indicator"></i> Layanan</a>
+                                    <Link className="nav-link " aria-current="page" href="#"><i className="bi bi-app-indicator"></i> Layanan</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " aria-current="page" href="#"><i className="bi bi-cart-check"></i> Shop</a>
+                                    <Link className="nav-link " aria-current="page" href="#"><i className="bi bi-cart-check"></i> Shop</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " aria-current="page" href="#"><i className="bi bi-award"></i> Portfolio</a>
+                                    <Link className="nav-link " aria-current="page" href="#"><i className="bi bi-award"></i> Portfolio</Link>
                                 </li>
                             </ul>
                         </div>
